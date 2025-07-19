@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 
-
+print("Started execution  successfully...")
 driver = webdriver.Chrome()
 driver.get("https://www.python.org/")
 driver.maximize_window()
@@ -19,3 +19,8 @@ search_bar.send_keys(Keys.RETURN)
 driver.implicitly_wait(5)
 time.sleep(10)
 driver.quit()
+print("------------------------------------...")
+print("------------------------------------...")
+print("------------------------------------...")
+print("------------------------------------...")
+print("Executed successfully...")
