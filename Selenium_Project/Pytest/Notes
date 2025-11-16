@@ -1,0 +1,25 @@
+1) To Run all the test methods in one time
+command = py.test
+
+2) To run particular input test file
+command = py.test test_demo1.py
+
+3) To run only selected test method
+command = py.test -k login -v
+
+4) To run a group of tests using markers
+command  =  py.test -m login
+command =  py.test /Pytest/test_demo1.py -m login
+
+5) To run the tests in parallel mode install the below package.
+command = pip install pytest-xdist
+
+  To run the tests in parallel use below command:
+  command  = py.test /Pytest/test_Webpage_Login.py -n 5
+
+6) To install pytest html reports, install below package
+command = pip install pytest-html
+
+7) To get html reports for running tests use below command to run the tests
+command = pytest .\Pytest\test_Google_test.py -v -s --html=test_google_report.html
+command = pytest .\Pytest\test_google_fixture.py -v -s --html=test_google_fixture_report.html
